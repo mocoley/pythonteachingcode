@@ -1,7 +1,7 @@
 from tkinter import *
 from math import sqrt as sqr
 
-
+#define an object oriented programming
 class Application(Frame):
     """
     An example of a calculator app developed using the 
@@ -21,7 +21,7 @@ class Application(Frame):
         self.create_widgets()
         self.bind_buttons(master)
         self.grid()
-        
+        #method (function definition)
     def add_chr(self, char, btn=None):
         """
         Concatenates a character passed from a button press (or key type) 
@@ -109,7 +109,7 @@ class Application(Frame):
                 self.master.after(100, lambda: btn.config(bg="SystemButtonFace"))
         else:
             pass
-
+#binding to the keyboards key logger
     def bind_buttons(self, master):
         """
         Binds keys to their appropriate input
@@ -216,4 +216,5 @@ class Application(Frame):
 root = Tk()
 root.geometry()
 app = Application(root)
+root.title("Modupe's Calculator")
 root.mainloop()
